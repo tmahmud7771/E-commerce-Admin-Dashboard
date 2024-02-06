@@ -1,7 +1,7 @@
 {
-  "name": "kachabazar-admin",
+  "name": "unionit-admin",
   "version": "0.1.0",
-  "description": "this is Kachabazar-admin built with react.js and tailwindcss",
+  "description": "this is unionit-admin built with react.js and tailwindcss",
   "private": true,
   "type": "module",
   "dependencies": {
@@ -27,6 +27,7 @@
     "draft-js-import-html": "^1.4.1",
     "draftjs-to-html": "^0.9.1",
     "export-from-json": "^1.7.2",
+    "framer-motion": "^11.0.3",
     "i18next": "^22.5.1",
     "i18next-browser-languagedetector": "^7.0.2",
     "immutability-helper": "^3.1.1",

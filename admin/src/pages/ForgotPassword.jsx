@@ -60,7 +60,7 @@ const ForgotPassword = () => {
               </form>
               <p className="mt-4">
                 <Link
-                  className="text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline"
+                  className="text-sm font-medium text-['#FF914D'] dark:text-blue-800 hover:underline"
                   to="/login"
                 >
                   Already have an account? Login

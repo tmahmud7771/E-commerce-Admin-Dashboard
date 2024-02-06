@@ -7,15 +7,15 @@ const PageTitle = ({ title, description }) => {
       <title>
         {" "}
         {title
-          ? ` ${title} | Kachabazar : Point of Sale and E-Commerce Website all in one`
-          : "Kachabazar : Point of Sale and E-Commerce Website all in one"}
+          ? ` ${title} | unionit : Point of Sale and E-Commerce Website all in one`
+          : "unionit : Point of Sale and E-Commerce Website all in one"}
       </title>
       <meta
         name="description"
         content={
           description
             ? ` ${description} `
-            : "Kachabazar : Point of Sale and E-Commerce Website all in one"
+            : "unionit : Point of Sale and E-Commerce Website all in one"
         }
       />
     </Helmet>

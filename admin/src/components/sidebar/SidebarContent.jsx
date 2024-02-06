@@ -4,6 +4,7 @@ import Cookies from "js-cookie";
 import { useTranslation } from "react-i18next";
 import { Button, WindmillContext } from "@windmill/react-ui";
 import { IoLogOutOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 //internal import
 import sidebar from "@/routes/sidebar";
@@ -24,15 +25,25 @@ const SidebarContent = () => {
   };
 
   return (
-    <div className="py-4 text-gray-500 dark:text-gray-400">
-      <a className=" text-gray-900 dark:text-gray-200" href="/dashboard">
+    <div className="py-4 text-gray-600 dark:text-white h-[950px] overflow-auto">
+      <a className=" text-gray-900 dark:text-orange-200" href="/dashboard">
         {mode === "dark" ? (
-          <img src={logoLight} alt="kachabazar" width="135" className="pl-6" />
+          <img
+            src="https://res.cloudinary.com/ddctd19xo/image/upload/v1704655990/unionit/UNION_nq6xrr.png"
+            alt="unionit"
+            width="135"
+            className="pl-6"
+          />
         ) : (
-          <img src={logoDark} alt="kachabazar" width="135" className="pl-6" />
+          <img
+            src="https://res.cloudinary.com/ddctd19xo/image/upload/v1704655990/unionit/UNION_nq6xrr.png"
+            alt="unionit"
+            width="135"
+            className="pl-6"
+          />
         )}
       </a>
-      <ul className="mt-8">
+      <ul className="mt-8 ">
         {sidebar.map((route) =>
           route.routes ? (
             <SidebarSubMenu route={route} key={route.name} />
@@ -42,16 +53,16 @@ const SidebarContent = () => {
                 exact
                 to={route.path}
                 target={`${route?.outside ? "_blank" : "_self"}`}
-                className="px-6 py-4 inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-emerald-700 dark:hover:text-gray-200"
-                // activeClassName="text-emerald-500 dark:text-gray-100"
+                className="px-6 py-4 inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-orange-400 dark:hover:text-gray-200"
+                // activeClassName="text-['#FF914D'] dark:text-gray-100"
                 activeStyle={{
-                  color: "#0d9e6d",
+                  color: "#FF914D",
                 }}
                 rel="noreferrer"
               >
                 <Route path={route.path} exact={route.exact}>
                   <span
-                    className="absolute inset-y-0 left-0 w-1 bg-emerald-500 rounded-tr-lg rounded-br-lg"
+                    className="absolute inset-y-0 left-0 w-1 hover:text-orange-400 rounded-tr-lg rounded-br-lg"
                     aria-hidden="true"
                   ></span>
                 </Route>
@@ -62,13 +73,20 @@ const SidebarContent = () => {
           )
         )}
       </ul>
+
       <span className="lg:fixed bottom-0 px-6 py-6 w-64 mx-auto relative mt-3 block">
-        <Button onClick={handleLogOut} size="large" className="w-full">
-          <span className="flex items-center">
-            <IoLogOutOutline className="mr-3 text-lg" />
-            <span className="text-sm">{t("LogOut")}</span>
-          </span>
-        </Button>
+        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <button
+            onClick={handleLogOut}
+            size="large"
+            className=" flex w-[200px] bg-blue-800 py-3 rounded-md  justify-center shadow-md relative"
+          >
+            <span className="flex items-center">
+              <IoLogOutOutline className="mr-3 text-lg text-white" />
+              <span className="text-sm text-white">{t("LogOut")}</span>
+            </span>
+          </button>
+        </motion.button>
       </span>
     </div>
   );

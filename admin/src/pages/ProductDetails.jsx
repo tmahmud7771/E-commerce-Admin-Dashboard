@@ -84,7 +84,7 @@ const ProductDetails = () => {
                   <p className="text-sm text-gray-500 pr-4">
                     {t("Status")}:{" "}
                     {data.status === "show" ? (
-                      <span className="text-emerald-400">
+                      <span className="text-blue-800">
                         {t("ThisProductShowing")}
                       </span>
                     ) : (
@@ -156,7 +156,7 @@ const ProductDetails = () => {
               <div className="mt-6">
                 <button
                   onClick={() => handleUpdate(id)}
-                  className="cursor-pointer leading-5 transition-colors duration-150 font-medium text-sm focus:outline-none px-5 py-2 rounded-md text-white bg-emerald-500 border border-transparent active:bg-emerald-600 hover:bg-emerald-600 "
+                  className="cursor-pointer leading-5 transition-colors duration-150 font-medium text-sm focus:outline-none px-5 py-2 rounded-md text-white bg-blue-800 border border-transparent active:bg-blue-800 hover:bg-blue-800 "
                 >
                   {t("EditProduct")}
                 </button>

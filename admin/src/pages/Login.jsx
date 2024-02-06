@@ -71,7 +71,7 @@ const Login = () => {
                     <CMButton
                       disabled={loading}
                       type="submit"
-                      className={`bg-emerald-600 rounded-md mt-4 h-12 w-full`}
+                      className={`bg-blue-800 rounded-md mt-4 h-12 w-full`}
                       to="/dashboard"
                     />
                   ) : (
@@ -87,7 +87,7 @@ const Login = () => {
                   <hr className="my-10" />
                   <button
                     disabled
-                    className="text-sm inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-serif text-center justify-center rounded-md focus:outline-none text-gray-700 bg-gray-100 shadow-sm my-2 md:px-2 lg:px-3 py-4 md:py-3.5 lg:py-4 hover:text-white hover:bg-blue-600 h-11 md:h-12 w-full mr-2"
+                    className="text-sm inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-serif text-center justify-center rounded-md focus:outline-none text-gray-700 bg-gray-100 shadow-sm my-2 md:px-2 lg:px-3 py-4 md:py-3.5 lg:py-4 hover:text-white hover:bg-teal-100 h-11 md:h-12 w-full mr-2"
                   >
                     <ImFacebook className="w-4 h-4 mr-2" />{" "}
                     <span className="ml-2"> {t("LoginWithFacebook")} </span>
@@ -103,7 +103,7 @@ const Login = () => {
 
                 <p className="mt-4">
                   <Link
-                    className="text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline"
+                    className="text-sm font-medium text-['#FF914D'] dark:text-blue-800 hover:underline"
                     to="/forgot-password"
                   >
                     {t("ForgotPassword")}
@@ -111,7 +111,7 @@ const Login = () => {
                 </p>
                 <p className="mt-1">
                   <Link
-                    className="text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline"
+                    className="text-sm font-medium text-['#FF914D'] dark:text-blue-800 hover:underline"
                     to="/signup"
                   >
                     {t("CreateAccountTitle")}

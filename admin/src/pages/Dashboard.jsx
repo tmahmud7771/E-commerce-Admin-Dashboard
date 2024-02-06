@@ -248,7 +248,7 @@ const Dashboard = () => {
           card={todayCardPayment || 0}
           credit={todayCreditPayment || 0}
           price={todayOrderAmount || 0}
-          className="text-white dark:text-emerald-100 bg-teal-600"
+          className="text-white dark:text-emerald-100 bg-orange-600"
           loading={loadingOrderAmount}
         />
 
@@ -280,7 +280,7 @@ const Dashboard = () => {
           Icon={ImCreditCard}
           loading={loadingOrderAmount}
           price={dashboardOrderAmount?.lastMonthOrderAmount || 0}
-          className="text-white dark:text-teal-100 bg-cyan-600"
+          className="text-white dark:text-blue-100 bg-cyan-600"
         />
 
         <CardItemTwo
@@ -288,7 +288,7 @@ const Dashboard = () => {
           title2="AllTimeSales"
           Icon={ImCreditCard}
           price={dashboardOrderAmount?.totalAmount || 0}
-          className="text-white dark:text-emerald-100 bg-emerald-600"
+          className="text-white dark:text-emerald-100 bg-blue-800"
           loading={loadingOrderAmount}
         />
       </div>
@@ -314,14 +314,14 @@ const Dashboard = () => {
           Icon={FiTruck}
           loading={loadingOrderCount}
           quantity={dashboardOrderCount?.totalProcessingOrder || 0}
-          className="text-teal-600 dark:text-teal-100 bg-teal-100 dark:bg-teal-500"
+          className="text-blue-600 dark:text-blue-100 bg-teal-100 dark:bg-teal-500"
         />
         <CardItem
           title={t("OrderDelivered")}
           Icon={FiCheck}
           loading={loadingOrderCount}
           quantity={dashboardOrderCount?.totalDeliveredOrder || 0}
-          className="text-emerald-600 dark:text-emerald-100 bg-emerald-100 dark:bg-emerald-500"
+          className="text-orange-400 dark:text-emerald-100 bg-teal-100 dark:bg-blue-800"
         />
       </div>
 

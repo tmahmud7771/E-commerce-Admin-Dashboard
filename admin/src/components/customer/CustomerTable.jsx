@@ -53,7 +53,7 @@ const CustomerTable = ({ customers }) => {
 
             <TableCell>
               <div className="flex justify-end text-right">
-                <div className="p-2 cursor-pointer text-gray-400 hover:text-emerald-600">
+                <div className="p-2 cursor-pointer text-gray-400 hover:text-orange-400">
                   {" "}
                   <Link to={`/customer-order/${user._id}`}>
                     <Tooltip

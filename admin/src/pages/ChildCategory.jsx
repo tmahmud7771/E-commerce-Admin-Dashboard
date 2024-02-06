@@ -116,7 +116,7 @@ const ChildCategory = () => {
 
       <div className="flex items-center pb-4">
         <ol className="flex items-center w-full overflow-hidden font-serif">
-          <li className="text-sm pr-1 transition duration-200 ease-in cursor-pointer hover:text-emerald-500 font-semibold">
+          <li className="text-sm pr-1 transition duration-200 ease-in cursor-pointer hover:text-['#FF914D'] font-semibold">
             <Link to={`/categories`}>{t("Categories")}</Link>
           </li>
           {selectedObj?.map((child, i) => (
@@ -125,7 +125,7 @@ const ChildCategory = () => {
                 {" "}
                 <FiChevronRight />{" "}
               </li>
-              <li className="text-sm pl-1 transition duration-200 ease-in cursor-pointer text-blue-700 hover:text-emerald-500 font-semibold ">
+              <li className="text-sm pl-1 transition duration-200 ease-in cursor-pointer text-blue-700 hover:text-['#FF914D'] font-semibold ">
                 <Link to={`/categories/${child._id}`}>
                   {showingTranslateValue(child?.name)}
                 </Link>

@@ -122,7 +122,7 @@ const ProductTable = ({ products, isCheck, setIsCheck }) => {
             <TableCell>
               <Link
                 to={`/product/${product._id}`}
-                className="flex justify-center text-gray-400 hover:text-emerald-600"
+                className="flex justify-center text-gray-400 hover:text-orange-400"
               >
                 <Tooltip
                   id="view"

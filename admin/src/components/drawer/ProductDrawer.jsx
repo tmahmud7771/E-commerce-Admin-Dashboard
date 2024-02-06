@@ -364,13 +364,13 @@ const ProductDrawer = ({ id }) => {
             isCombination &&
             (attribue.length < 1 ? (
               <div
-                className="bg-teal-100 border border-teal-600 rounded-md text-teal-900 px-4 py-3 m-4"
+                className="bg-teal-100 border border-teal-600 rounded-md text-blue-900 px-4 py-3 m-4"
                 role="alert"
               >
                 <div className="flex">
                   <div className="py-1">
                     <svg
-                      className="fill-current h-6 w-6 text-teal-500 mr-4"
+                      className="fill-current h-6 w-6 text-blue-500 mr-4"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >

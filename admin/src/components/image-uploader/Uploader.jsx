@@ -183,13 +183,13 @@ const Uploader = ({ setImageUrl, imageUrl, product, folder }) => {
       >
         <input {...getInputProps()} />
         <span className="mx-auto flex justify-center">
-          <FiUploadCloud className="text-3xl text-emerald-500" />
+          <FiUploadCloud className="text-3xl text-['#FF914D']" />
         </span>
         <p className="text-sm mt-2">{t("DragYourImage")}</p>
         <em className="text-xs text-gray-400">{t("imageFormat")}</em>
       </div>
 
-      <div className="text-emerald-500">{loading && err}</div>
+      <div className="text-['#FF914D']">{loading && err}</div>
       <aside className="flex flex-row flex-wrap mt-4">
         {product ? (
           <DndProvider backend={HTML5Backend}>

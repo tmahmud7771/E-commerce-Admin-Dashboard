@@ -201,8 +201,8 @@ const Orders = () => {
                     type="button"
                     className={`${
                       (data?.orders?.length <= 0 || loadingExport) &&
-                      "opacity-50 cursor-not-allowed bg-emerald-600"
-                    } flex items-center justify-center text-sm leading-5 h-12 w-full text-center transition-colors duration-150 font-medium px-6 py-2 rounded-md text-white bg-emerald-500 border border-transparent active:bg-emerald-600 hover:bg-emerald-600 `}
+                      "opacity-50 cursor-not-allowed bg-blue-800"
+                    } flex items-center justify-center text-sm leading-5 h-12 w-full text-center transition-colors duration-150 font-medium px-6 py-2 rounded-md text-white bg-blue-800 border border-transparent active:bg-blue-800 hover:bg-blue-800 `}
                   >
                     Download All Orders
                     <span className="ml-2 text-base">

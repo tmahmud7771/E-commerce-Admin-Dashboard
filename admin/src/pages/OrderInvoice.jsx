@@ -68,9 +68,9 @@ const OrderInvoice = () => {
               <div className="lg:text-right text-left">
                 <h2 className="lg:flex lg:justify-end text-lg font-serif font-semibold mt-4 lg:mt-0 lg:ml-0 md:mt-0">
                   {mode === "dark" ? (
-                    <img src={logoDark} alt="kachabazar" width="110" />
+                    <img src={logoDark} alt="unionit" width="110" />
                   ) : (
-                    <img src={logoLight} alt="kachabazar" width="110" />
+                    <img src={logoLight} alt="unionit" width="110" />
                   )}
                 </h2>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
@@ -180,7 +180,7 @@ const OrderInvoice = () => {
                 <span className="mb-1 font-bold font-serif text-sm uppercase text-gray-600 dark:text-gray-500 block">
                   {t("InvoiceTotalAmount")}
                 </span>
-                <span className="text-xl font-serif font-bold text-red-500 dark:text-emerald-500 block">
+                <span className="text-xl font-serif font-bold text-red-500 dark:text-['#FF914D'] block">
                   {currency}
                   {getNumberTwo(data.total)}
                 </span>
@@ -207,7 +207,7 @@ const OrderInvoice = () => {
               loading ? (
                 "Loading..."
               ) : (
-                <button className="flex items-center text-sm leading-5 transition-colors duration-150 font-medium focus:outline-none px-5 py-2 rounded-md text-white bg-emerald-500 border border-transparent active:bg-emerald-600 hover:bg-emerald-600  w-auto cursor-pointer">
+                <button className="flex items-center text-sm leading-5 transition-colors duration-150 font-medium focus:outline-none px-5 py-2 rounded-md text-white bg-blue-800 border border-transparent active:bg-blue-800 hover:bg-blue-800  w-auto cursor-pointer">
                   Download Invoice
                   <span className="ml-2 text-base">
                     <IoCloudDownloadOutline />
@@ -219,7 +219,7 @@ const OrderInvoice = () => {
 
           <ReactToPrint
             trigger={() => (
-              <button className="flex items-center text-sm leading-5 transition-colors duration-150 font-medium focus:outline-none px-5 py-2 rounded-md text-white bg-emerald-500 border border-transparent active:bg-emerald-600 hover:bg-emerald-600  w-auto">
+              <button className="flex items-center text-sm leading-5 transition-colors duration-150 font-medium focus:outline-none px-5 py-2 rounded-md text-white bg-blue-800 border border-transparent active:bg-blue-800 hover:bg-blue-800  w-auto">
                 {t("PrintInvoice")}
                 <span className="ml-2">
                   <FiPrinter />

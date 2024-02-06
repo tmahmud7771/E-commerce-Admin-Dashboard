@@ -65,7 +65,7 @@ const OrderTable = ({ orders }) => {
               <div className="flex justify-between items-center">
                 <PrintReceipt orderId={order._id} />
 
-                <span className="p-2 cursor-pointer text-gray-400 hover:text-emerald-600">
+                <span className="p-2 cursor-pointer text-gray-400 hover:text-orange-400">
                   <Link to={`/order/${order._id}`}>
                     <Tooltip
                       id="view"

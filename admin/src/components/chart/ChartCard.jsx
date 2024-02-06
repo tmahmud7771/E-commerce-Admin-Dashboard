@@ -10,8 +10,8 @@ const Chart = ({ children, title, loading, mode }) => {
             count={1}
             height={20}
             className="dark:bg-gray-800 bg-gray-200"
-            baseColor={`${mode === "dark" ? "#010101" : "#f9f9f9"}`}
-            highlightColor={`${mode === "dark" ? "#1a1c23" : "#f8f8f8"} `}
+            baseColor={`${mode === "dark" ? "#004AAD" : "#004AAD"}`}
+            highlightColor={`${mode === "dark" ? "#004AAD" : "#004AAD"} `}
           />
         ) : (
           title
@@ -24,8 +24,8 @@ const Chart = ({ children, title, loading, mode }) => {
             <div className="flex justify-center">
               <Skeleton
                 className="dark:bg-gray-800 bg-gray-200"
-                baseColor={`${mode === "dark" ? "#010101" : "#f9f9f9"}`}
-                highlightColor={`${mode === "dark" ? "#1a1c23" : "#f8f8f8"} `}
+                baseColor={`${mode === "dark" ? "#004AAD" : "#004AAD"}`}
+                highlightColor={`${mode === "dark" ? "#004AAD" : "#004AAD"} `}
                 count={1}
                 width={250}
                 height={250}

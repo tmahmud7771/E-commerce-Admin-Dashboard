@@ -49,7 +49,7 @@ const CardItem = ({
                 <div className="grid grid-cols-2 gap-4 w-full mb-1 text-sm font-medium text-gray-600 dark:text-gray-400">
                   <div>
                     <span className="font-semibold">Today</span>{" "}
-                    <span className="text-emerald-600 text-sm font-semibold">
+                    <span className="text-orange-400 text-sm font-semibold">
                       ({getNumberTwo(todayPending)})
                     </span>
                   </div>

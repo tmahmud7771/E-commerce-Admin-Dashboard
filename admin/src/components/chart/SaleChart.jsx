@@ -6,7 +6,7 @@ const SaleChart = ({ salesReport }) => {
   const { getNumberTwo } = useUtilsFunction();
   const [activeButton, setActiveButton] = useState({
     title: "Sales",
-    color: "emerald",
+    color: "orange",
   });
 
   const handleClick = ({ title, color }) => {
@@ -21,7 +21,7 @@ const SaleChart = ({ salesReport }) => {
           ? {
               label: "Sales",
               data: salesReport?.map((or) => getNumberTwo(or.total)),
-              borderColor: "#10B981",
+              borderColor: "#004AAD",
               backgroundColor: "#10B981",
               borderWidth: 3,
               yAxisID: "y",
@@ -54,7 +54,7 @@ const SaleChart = ({ salesReport }) => {
               type="button"
               className={`inline-block p-2 rounded-t-lg border-b-2 border-transparent ${
                 activeButton.title === "Sales"
-                  ? "text-emerald-600 border-emerald-600 dark:text-emerald-500 dark:border-emerald-500"
+                  ? "text-orange-400 border-emerald-600 dark:text-['#FF914D'] dark:border-emerald-500"
                   : "hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
               }  focus:outline-none`}
             >

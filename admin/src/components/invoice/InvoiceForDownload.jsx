@@ -326,7 +326,7 @@ const InvoiceForDownload = ({
                 <Text style={styles.info}>
                   <Text className="font-semibold text-xs capitalize mt-2">
                     VAT Number :{" "}
-                    <Text className="text-emerald-500">
+                    <Text className="text-['#FF914D']">
                       {globalSetting?.vat_number}
                     </Text>
                   </Text>
@@ -345,7 +345,7 @@ const InvoiceForDownload = ({
               >
                 <Image
                   src={logoDark}
-                  alt="kachabazar"
+                  alt="unionit"
                   style={{
                     width: 90,
                     alignItems: "right",

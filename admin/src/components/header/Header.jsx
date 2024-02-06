@@ -74,7 +74,7 @@ const Header = () => {
   return (
     <>
       <header className="z-30 py-4 bg-white shadow-sm dark:bg-gray-800">
-        <div className="container flex items-center justify-between h-full px-6 mx-auto text-emerald-500 dark:text-emerald-500">
+        <div className="container flex items-center justify-between h-full px-6 mx-auto text-['#FF914D'] dark:text-['#FF914D']">
           <button
             type="button"
             onClick={() => setNavBar(!navBar)}
@@ -357,7 +357,7 @@ const Header = () => {
             {/* <!-- Profile menu --> */}
             <li className="relative inline-block text-left" ref={pRef}>
               <button
-                className="rounded-full dark:bg-gray-500 bg-emerald-500 text-white h-8 w-8 font-medium mx-auto focus:outline-none"
+                className="rounded-full dark:bg-gray-500 bg-blue-800 text-white h-8 w-8 font-medium mx-auto focus:outline-none"
                 onClick={handleProfileOpen}
               >
                 {adminInfo.image ? (
@@ -373,7 +373,7 @@ const Header = () => {
 
               {profileOpen && (
                 <ul className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 focus:outline-none">
-                  <li className="justify-between font-serif font-medium py-2 pl-4 transition-colors duration-150 hover:bg-gray-100 text-gray-500 hover:text-emerald-500 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200">
+                  <li className="justify-between font-serif font-medium py-2 pl-4 transition-colors duration-150 hover:bg-gray-100 text-gray-500 hover:text-['#FF914D'] dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200">
                     <Link to="/dashboard">
                       <span className="flex items-center text-sm">
                         <IoGridOutline
@@ -385,7 +385,7 @@ const Header = () => {
                     </Link>
                   </li>
 
-                  <li className="justify-between font-serif font-medium py-2 pl-4 transition-colors duration-150 hover:bg-gray-100 text-gray-500 hover:text-emerald-500 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200">
+                  <li className="justify-between font-serif font-medium py-2 pl-4 transition-colors duration-150 hover:bg-gray-100 text-gray-500 hover:text-['#FF914D'] dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200">
                     <Link to="/edit-profile">
                       <span className="flex items-center text-sm">
                         <IoSettingsOutline
@@ -399,7 +399,7 @@ const Header = () => {
 
                   <li
                     onClick={handleLogOut}
-                    className="cursor-pointer justify-between font-serif font-medium py-2 pl-4 transition-colors duration-150 hover:bg-gray-100 text-gray-500 hover:text-emerald-500 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                    className="cursor-pointer justify-between font-serif font-medium py-2 pl-4 transition-colors duration-150 hover:bg-gray-100 text-gray-500 hover:text-['#FF914D'] dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                   >
                     <span className="flex items-center text-sm">
                       <IoLogOutOutline
