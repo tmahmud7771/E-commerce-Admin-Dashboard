@@ -3,15 +3,15 @@ import Skeleton from "react-loading-skeleton";
 
 const Chart = ({ children, title, loading, mode }) => {
   return (
-    <div className="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-      <p className="mb-4 font-semibold text-gray-800 dark:text-gray-300">
+    <div className="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800 dark:text-white">
+      <p className="mb-4 font-semibold text-gray-800 dark:text-white">
         {loading ? (
           <Skeleton
             count={1}
             height={20}
-            className="dark:bg-gray-800 bg-gray-200"
-            baseColor={`${mode === "dark" ? "#004AAD" : "#004AAD"}`}
-            highlightColor={`${mode === "dark" ? "#004AAD" : "#004AAD"} `}
+            className="dark:bg-gray-800 text-white bg-gray-200 dark:text-white"
+            baseColor={`${mode === "dark" ? "#FFFFFF" : "#FFFFFF"}`}
+            highlightColor={`${mode === "dark" ? "#FFFFFF" : "#FFFFFF"} `}
           />
         ) : (
           title
@@ -23,9 +23,9 @@ const Chart = ({ children, title, loading, mode }) => {
           {loading ? (
             <div className="flex justify-center">
               <Skeleton
-                className="dark:bg-gray-800 bg-gray-200"
-                baseColor={`${mode === "dark" ? "#004AAD" : "#004AAD"}`}
-                highlightColor={`${mode === "dark" ? "#004AAD" : "#004AAD"} `}
+                className="dark:bg-gray-800 bg-gray-200 dark:text-white"
+                baseColor={`${mode === "dark" ? "#FFFFFF" : "#FFFFFF"}`}
+                highlightColor={`${mode === "dark" ? "#FFFFFF" : "#FFFFFF"} `}
                 count={1}
                 width={250}
                 height={250}
@@ -40,9 +40,9 @@ const Chart = ({ children, title, loading, mode }) => {
         <>
           {loading ? (
             <Skeleton
-              className="dark:bg-gray-800 bg-gray-200"
-              baseColor={`${mode === "dark" ? "#010101" : "#f9f9f9"}`}
-              highlightColor={`${mode === "dark" ? "#1a1c23" : "#f8f8f8"} `}
+              className="dark:bg-gray-800 bg-gray-200 dark:text-white"
+              baseColor={`${mode === "dark" ? "#FFFFFF" : "#FFFFFF"}`}
+              highlightColor={`${mode === "dark" ? "#FFFFFF" : "#FFFFFF"} `}
               count={13}
               height={20}
             />

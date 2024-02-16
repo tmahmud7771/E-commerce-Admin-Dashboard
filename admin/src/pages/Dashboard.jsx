@@ -314,7 +314,7 @@ const Dashboard = () => {
           Icon={FiTruck}
           loading={loadingOrderCount}
           quantity={dashboardOrderCount?.totalProcessingOrder || 0}
-          className="text-blue-600 dark:text-blue-100 bg-teal-100 dark:bg-teal-500"
+          className="text-blue-600 dark:text-blue-100 bg-blue-100 dark:bg-orange-500"
         />
         <CardItem
           title={t("OrderDelivered")}
